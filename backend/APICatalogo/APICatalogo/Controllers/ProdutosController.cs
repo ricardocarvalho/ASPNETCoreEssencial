@@ -50,10 +50,10 @@ namespace ApiCatalogo.Controllers
         {
             //a validação do ModelState é feito automaticamente
             //quando aplicamos o atributo [ApiController]
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
 
             _context.Produtos.Add(produto);
             _context.SaveChanges();
